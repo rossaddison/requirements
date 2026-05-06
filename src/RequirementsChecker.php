@@ -189,6 +189,7 @@ final class RequirementsChecker
         if (empty($extensionVersion)) {
             return false;
         }
+        /** @var string $extensionVersion */
         if (strncasecmp($extensionVersion, 'PECL-', 5) === 0) {
             $extensionVersion = substr($extensionVersion, 5);
         }
@@ -375,6 +376,7 @@ final class RequirementsChecker
             $evalPrefix = 'eval:';
             if (is_string($requirement['condition']) && strpos($requirement['condition'], $evalPrefix) === 0) {
                 $expression = substr($requirement['condition'], strlen($evalPrefix));
+                /** @var string $expression */
                 $requirement['condition'] = $this->evaluateExpression($expression);
             }
         }
