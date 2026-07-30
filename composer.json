@@ -31,8 +31,8 @@
     },
     "require-dev": {
         "maglnet/composer-require-checker": "^3.8 || ^4.24",
-        "phpunit/phpunit": "^9.6.34 || ^12.5.24",
-        "roave/infection-static-analysis-plugin": "^1.43",
+        "phpunit/phpunit": "^9.6.34 || ^12.5.33",
+        "roave/infection-static-analysis-plugin": "^1.44",
         "spatie/phpunit-watcher": "^1.24.4",
         "vimeo/psalm": "^4.30 || ^5.26.1 || ^6.16.1"
     },
